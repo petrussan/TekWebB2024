@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+       <h2>What can JavaScript Do?</h2>
+       <p id="demo">JavaScript can change HTML content.</p> 
+       <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click Me!</button>
+
+       <script>
+            function myfunction(p1,p2){
+                return p1*p2;
+            }
+            let x = 100;
+            x = myfunction(3,10);
+            let nama ="Andi";
+            let something;
+            let s = "";
+            let people = {firstname:"Andi", 
+                          lastname:"Gunawan",   
+                          age:30,
+                          fullname: function(){
+                                return this.firstname + " " + this.lastname;
+                          }};
+            let cars = ["Fortuner", "Expander", "Alphard"];
+            
+            document.write("Nilai x adalah: "+x);
+            document.write("<P> x adalah variabel dengan jenis: "+typeof x+"</P>");
+            document.write("<P> nama adalah variabel dengan jenis: "+typeof nama+"</P>");
+            document.write("<P> something adalah variabel dengan jenis: "+typeof something+"</P>");
+            document.write("<P> s adalah variabel dengan jenis: "+typeof s+"</P>");
+            document.write("<P> people adalah variabel dengan jenis: "+typeof people+"</P>");     
+            document.write("<P>cars[0] adalah variabel dengan jenis: "+typeof cars[0]+"</P>");     
+            document.write("<P>cars adalah variabel dengan jenis: "+typeof cars+"</P>");     
+
+            document.write("<P>Accessing Object properties:<BR></P>"+people.firstname);
+            document.write("<P>Accessing Object properties:<BR></P>"+people["firstname"]);
+            document.write("<P>Accessing Object methods:<BR></P>"+people.fullname());
+            </script>
+    </body>
+</html>

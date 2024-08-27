@@ -1,0 +1,18 @@
+h1 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;}
+
+.highlight {
+    background-color: #CCCCCC;
+}
+
+#intro { font-size: 2em; }
+
+a {display: block;}
+
+#BrightText {color: #00ff00; font-weight: bolder;}
+.BlueText {color: #6699ff}
+
+p:first-letter {font-size: 200%; color:red;}
+a:hover {color: #ff0000; text-decoration: none;}
+a:link {color: #00f; font-weight: bold;}
+a:visited {color: purple; border: groove;}
