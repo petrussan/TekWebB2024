@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+
+                $("#show").click(function(){
+                    $("p").show();
+                });
+
+                $("#a1").mouseover(function(){
+                    alert("Entering a1 area");
+                });
+
+            });
+            
+        </script>
+    </head>
+    <body>
+        <p>Jika anda klik button "Hide", paragraf ini akan hilang</p>
+        <button id="hide">Hide</button><button id="show">Show</button>
+        <div id="a1">This is a1 area. asda s asd a a ad dsa</div>
+        <div style="background: #FF00FF;height:80px;width:20px;position:absolute"></div>
+    </body>
+</html>
